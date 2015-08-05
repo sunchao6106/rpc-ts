@@ -1,0 +1,45 @@
+{
+  "namespace" : "com.sunchao.rpc.base.serializer",
+  "protocol"  : "HelloWorld",
+  "doc"       : "Protocol Greetings",
+  "types"     : [
+       {
+	     "name" : "Greeting",
+         "type" :  "record",
+         "fields" : [
+		   {
+		      "name" : "message",
+			  "type" : "string"
+		   },
+		   {
+		      "name" :  "userId",
+		      "type" :  "int"
+		   }
+		 ]		 
+	   },
+	   {
+	      "name" : "Curse",
+		  "type" : "error",
+		  "fields" : [
+		    {
+			   "name" : "message",
+			   "type" : "string"
+			}
+		  ]
+	   }
+  ],
+  
+  "messages" : {
+     "hello" : {
+	   "doc"     : "say hello",
+	   "request" : [
+	       {
+		       "name" : "greeting" ,
+			   "type" : "Greeting"
+		   }
+	   ],
+	   "response" : "Greeting",
+	   "errors" : ["Curse"]
+	 }
+  }
+}

@@ -1,0 +1,1 @@
+peercodec = com.sunchao.rpc.base.transport.peer.support.impl.PeerCodec

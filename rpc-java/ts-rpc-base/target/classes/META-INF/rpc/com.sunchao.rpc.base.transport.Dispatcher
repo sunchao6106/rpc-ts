@@ -1,0 +1,4 @@
+threadpool = com.sunchao.rpc.base.transport.dispatcher.threadpool.ThreadPoolDispatcher
+direct =  com.sunchao.rpc.base.transport.dispatcher.direct.DirectExecutionDispatcher
+message = com.sunchao.rpc.base.transport.dispatcher.MessageOnlyDispatcher
+connection = com.sunchao.rpc.base.transport.dispatcher.connection.ConnectionOrderDispatcher

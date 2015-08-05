@@ -1,0 +1,1 @@
+varint = com.sunchao.rpc.base.serializer.support.varint.VarintSerializer
